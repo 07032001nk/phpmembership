@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule error app/views/error/notfound.php
+RewriteRule register app/views/authentication/register.php
+RewriteRule login app/views/authentication/login.php
+RewriteRule logout app/views/authentication/logout.php
+RewriteRule reset-password app/views/authentication/reset.php
+
+RewriteRule dashboard/welcome app/views/backend/welcome.php
+RewriteRule buy app/views/backend/buy.php
+RewriteRule course app/views/backend/course/index.php
+
+ErrorDocument 404 /error
